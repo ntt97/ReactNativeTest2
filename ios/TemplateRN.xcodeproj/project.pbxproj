@@ -25,7 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* TemplateRNTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TemplateRNTests.m; sourceTree = "<group>"; };
 		10E5C669268049FD9A368FE7 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
@@ -39,9 +38,9 @@
 		18AD80E927CD4D16A5BE2420 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		2C3539A72680EE50009AAA9F /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		2C3539B82680F074009AAA9F /* development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = development.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C3539B92680F074009AAA9F /* Info-dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-dev.plist"; path = "/Users/innomize/Desktop/Working/react-native-starter/ios/TemplateRN/Info-dev.plist"; sourceTree = "<absolute>"; };
+		2C3539B92680F074009AAA9F /* Info-dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-dev.plist"; path = "/Users/tylernguyen/Desktop/Freelancer-Working/viet-ad-online/ios/TemplateRN/Info-dev.plist"; sourceTree = "<absolute>"; };
 		2C3539CA2680F1DC009AAA9F /* staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = staging.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C3539CB2680F1DC009AAA9F /* Info-staging.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-staging.plist"; path = "/Users/innomize/Desktop/Working/react-native-starter/ios/TemplateRN/Info-staging.plist"; sourceTree = "<absolute>"; };
+		2C3539CB2680F1DC009AAA9F /* Info-staging.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-staging.plist"; path = "/Users/tylernguyen/Desktop/Freelancer-Working/viet-ad-online/ios/TemplateRN/Info-staging.plist"; sourceTree = "<absolute>"; };
 		2C53FAD62660DBC5009A3148 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TemplateRN/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		503BFBFC41814A609FF4A21F /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		529425B576A8414AE297F1FD /* libPods-TemplateRN-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TemplateRN-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,7 +129,6 @@
 			children = (
 				2C3539B92680F074009AAA9F /* Info-dev.plist */,
 				2C3539CB2680F1DC009AAA9F /* Info-staging.plist */,
-				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
