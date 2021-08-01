@@ -16,7 +16,6 @@ import I18n from 'i18n-js';
 import { changeConnectionStatus } from 'modules/network/actions';
 import AuthNav from 'navigation/authNav';
 import MainNav from 'navigation/mainNav';
-import MainNavDarkMode from 'navigation/mainNavDarkMode';
 import React, { useEffect } from 'react';
 import CodePush from 'react-native-code-push';
 import SplashScreen from 'react-native-splash-screen';
@@ -56,7 +55,7 @@ const App = (props: unknown) => {
     const isLog = await isLogin();
     const isDarkMode = await getIsDarkModeTheme();
     if (isLog) {
-      isDarkMode ? MainNavDarkMode() : MainNav();
+      MainNav();
     } else {
       AuthNav();
     }

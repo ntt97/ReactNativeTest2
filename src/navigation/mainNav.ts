@@ -1,17 +1,20 @@
-import { ICON_CART, ICON_HOME } from '@assets/index';
+import { ICON_BARS, ICON_CONTACT, ICON_HOME, ICON_NEW_PAGE, ICON_POST } from '@assets/index';
 import { isIOS } from '@constants/platform';
-import { CART_SCREEN, DRAW_SCREEN, HOME_SCREEN, ROOT } from '@constants/screenKeys';
+import { DRAW_SCREEN, HOME_SCREEN, ROOT } from '@constants/screenKeys';
 import { colors, WIDTH_RATIO } from '@constants/vars';
-import translate from '@localize/index';
 import { ImageRequireSource } from 'react-native';
 import { Layout, Navigation } from 'react-native-navigation';
 
 const testIDs = {
-  TABBAR: {
-    HOME: 'TABBAR.HOME',
-    CART: 'TABBAR.CART',
+  TAB_BAR: {
+    HOME: 'TAB_BAR.HOME',
+    NEW_PAGE: 'TAB_BAR.NEW_PAGE',
+    NEW_POST: 'TAB_BAR.NEW_POST',
+    CONTACT: 'TAB_BAR.CONTACT',
+    OTHER: 'TAB_BAR.OTHER',
   },
 };
+
 const initTab = (
   id: string,
   label: string,
@@ -67,7 +70,7 @@ const MainNav = () => {
       sideMenu: {
         left: {
           component: {
-            name: DRAW_SCREEN,
+            name: HOME_SCREEN,
           },
         },
         options: {
@@ -82,8 +85,11 @@ const MainNav = () => {
           bottomTabs: {
             id: ROOT,
             children: [
-              initTab(HOME_SCREEN, translate('navigation.home'), ICON_HOME, true, testIDs.TABBAR.HOME),
-              initTab(CART_SCREEN, translate('navigation.cart'), ICON_CART, true, testIDs.TABBAR.CART),
+              initTab(HOME_SCREEN, 'Trang chủ', ICON_HOME, true, testIDs.TAB_BAR.HOME),
+              initTab(HOME_SCREEN, 'Tin tức', ICON_NEW_PAGE, true, testIDs.TAB_BAR.NEW_PAGE),
+              initTab(HOME_SCREEN, 'Đăng bài', ICON_POST, true, testIDs.TAB_BAR.NEW_POST),
+              initTab(HOME_SCREEN, 'Liên hệ', ICON_CONTACT, true, testIDs.TAB_BAR.CONTACT),
+              initTab(HOME_SCREEN, 'Thêm', ICON_BARS, true, testIDs.TAB_BAR.OTHER),
             ],
             options: {
               bottomTabs: {
