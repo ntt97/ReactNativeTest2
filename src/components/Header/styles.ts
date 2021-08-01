@@ -49,8 +49,8 @@ export default StyleSheet.create({
     color: colors.BLUE,
   },
   containerRowHeader: {
-    backgroundColor: colors.LIGHT_BLUE,
-    height:nHeight
+    backgroundColor: colors.DOT_GREEN,
+    height: nHeight,
   },
 
   bodyHeader: {
@@ -63,7 +63,7 @@ export default StyleSheet.create({
       },
       ios: {
         alignItems: 'center',
-        marginTop: getStatusBarHeight()
+        marginTop: getStatusBarHeight(),
       },
     }),
   },

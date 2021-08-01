@@ -1,10 +1,8 @@
 import { PropsAlert } from '@components/CustomPopupCommon';
-import { SHOW_LOADING_WITH_SAGA } from '@constants/index';
 import { isIOS } from '@constants/platform';
-import { ALERT_POPUP, DRAW_SCREEN, LOADING_SCREEN } from '@constants/screenKeys';
+import { ALERT_POPUP, HOME_SCREEN, LOADING_SCREEN } from '@constants/screenKeys';
 import { Keyboard } from 'react-native';
 import { Navigation } from 'react-native-navigation';
-
 const TEMP_COMPONENT_ID: Record<string, string> = {};
 class NavigationActionsService {
   private static stackNavigation: any[] = [];
@@ -20,7 +18,7 @@ class NavigationActionsService {
     if (!NavigationActionsService.instance) {
       NavigationActionsService.instance = new NavigationActionsService();
       Navigation.events().registerComponentDidAppearListener(({ componentId, componentName, passProps }) => {
-        if (componentName != DRAW_SCREEN && componentName != LOADING_SCREEN && componentName != ALERT_POPUP) {
+        if (componentName != LOADING_SCREEN && componentName != ALERT_POPUP) {
           NavigationActionsService.navigation = componentId;
           TEMP_COMPONENT_ID[componentName] = componentId;
         }
@@ -147,7 +145,7 @@ class NavigationActionsService {
         sideMenu: {
           left: {
             component: {
-              name: DRAW_SCREEN,
+              name: HOME_SCREEN,
             },
           },
 

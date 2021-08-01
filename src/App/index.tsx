@@ -26,10 +26,7 @@ const App = (props: unknown) => {
   useEffect(() => {
     init();
     SplashScreen.hide();
-
-    return () => {
-      // unsubscribe();
-    };
+    return () => {};
   }, []);
 
   const init = async () => {
@@ -53,7 +50,6 @@ const App = (props: unknown) => {
 
   const renderScreen = async () => {
     const isLog = await isLogin();
-    const isDarkMode = await getIsDarkModeTheme();
     if (isLog) {
       MainNav();
     } else {

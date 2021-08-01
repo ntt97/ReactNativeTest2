@@ -1,6 +1,6 @@
 import { ICON_BARS, ICON_CONTACT, ICON_HOME, ICON_NEW_PAGE, ICON_POST } from '@assets/index';
 import { isIOS } from '@constants/platform';
-import { DRAW_SCREEN, HOME_SCREEN, ROOT } from '@constants/screenKeys';
+import { HOME_SCREEN, ROOT } from '@constants/screenKeys';
 import { colors, WIDTH_RATIO } from '@constants/vars';
 import { ImageRequireSource } from 'react-native';
 import { Layout, Navigation } from 'react-native-navigation';
