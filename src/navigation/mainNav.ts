@@ -1,6 +1,13 @@
 import { ICON_BARS, ICON_CONTACT, ICON_HOME, ICON_NEW_PAGE, ICON_POST } from '@assets/index';
 import { isIOS } from '@constants/platform';
-import { HOME_SCREEN, ROOT } from '@constants/screenKeys';
+import {
+  CONTACT_SCREEN,
+  HOME_SCREEN,
+  NEW_PAGE_SCREEN,
+  NEW_POST_SCREEN,
+  OTHER_SCREEN,
+  ROOT,
+} from '@constants/screenKeys';
 import { colors, WIDTH_RATIO } from '@constants/vars';
 import { ImageRequireSource } from 'react-native';
 import { Layout, Navigation } from 'react-native-navigation';
@@ -86,10 +93,10 @@ const MainNav = () => {
             id: ROOT,
             children: [
               initTab(HOME_SCREEN, 'Trang chủ', ICON_HOME, true, testIDs.TAB_BAR.HOME),
-              initTab(HOME_SCREEN, 'Tin tức', ICON_NEW_PAGE, true, testIDs.TAB_BAR.NEW_PAGE),
-              initTab(HOME_SCREEN, 'Đăng bài', ICON_POST, true, testIDs.TAB_BAR.NEW_POST),
-              initTab(HOME_SCREEN, 'Liên hệ', ICON_CONTACT, true, testIDs.TAB_BAR.CONTACT),
-              initTab(HOME_SCREEN, 'Thêm', ICON_BARS, true, testIDs.TAB_BAR.OTHER),
+              initTab(NEW_PAGE_SCREEN, 'Tin tức', ICON_NEW_PAGE, true, testIDs.TAB_BAR.NEW_PAGE),
+              initTab(NEW_POST_SCREEN, 'Đăng bài', ICON_POST, true, testIDs.TAB_BAR.NEW_POST),
+              initTab(CONTACT_SCREEN, 'Liên hệ', ICON_CONTACT, true, testIDs.TAB_BAR.CONTACT),
+              initTab(OTHER_SCREEN, 'Thêm', ICON_BARS, true, testIDs.TAB_BAR.OTHER),
             ],
             options: {
               bottomTabs: {

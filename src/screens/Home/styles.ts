@@ -1,6 +1,5 @@
-import { WIDTH, colors, FONT_SIZE_DEFAULT, WIDTH_RATIO, HEIGHT } from './../../constants/vars';
+import { WIDTH, colors, FONT_SIZE_DEFAULT, WIDTH_RATIO } from './../../constants/vars';
 import { StyleSheet } from 'react-native';
-import { bool } from 'yup';
 export default StyleSheet.create({
   container: {
     flex: 1,
