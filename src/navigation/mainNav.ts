@@ -3,6 +3,7 @@ import { isIOS } from '@constants/platform';
 import {
   CONTACT_SCREEN,
   HOME_SCREEN,
+  LOGIN_SCREEN,
   NEW_PAGE_SCREEN,
   NEW_POST_SCREEN,
   OTHER_SCREEN,
@@ -92,7 +93,7 @@ const MainNav = () => {
           bottomTabs: {
             id: ROOT,
             children: [
-              initTab(HOME_SCREEN, 'Trang chủ', ICON_HOME, true, testIDs.TAB_BAR.HOME),
+              initTab(LOGIN_SCREEN, 'Trang chủ', ICON_HOME, true, testIDs.TAB_BAR.HOME),
               initTab(NEW_PAGE_SCREEN, 'Tin tức', ICON_NEW_PAGE, true, testIDs.TAB_BAR.NEW_PAGE),
               initTab(NEW_POST_SCREEN, 'Đăng bài', ICON_POST, true, testIDs.TAB_BAR.NEW_POST),
               initTab(CONTACT_SCREEN, 'Liên hệ', ICON_CONTACT, true, testIDs.TAB_BAR.CONTACT),

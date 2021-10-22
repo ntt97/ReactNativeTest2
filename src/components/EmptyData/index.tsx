@@ -10,7 +10,7 @@ interface Props {
 }
 
 const EmptyData = (props: Props) => {
-  const { style, text = translate('common.list_empty') } = props;
+  const { style, text = 'Trống! Hiện tại chưa có bài viết nào cho mục này.' } = props;
   return <CustomText style={[styles.emptyView, style]} text={text} />;
 };
 

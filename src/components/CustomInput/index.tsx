@@ -51,6 +51,8 @@ export type CustomInputProps = {
   onBlur?: (e: NativeSyntheticEvent<TextInputFocusEventData>) => void;
   autoCorrect?: boolean;
   rightLoading?: boolean;
+  maxLength?: number;
+  disabled?: boolean;
 };
 
 const CustomInput = ({
@@ -80,7 +82,8 @@ const CustomInput = ({
   onBlur,
   autoCorrect,
   rightLoading = false,
-
+  maxLength,
+  disabled,
   ...rest
 }: CustomInputProps) => (
   <View style={[{ alignItems: 'flex-start' }]}>
@@ -107,6 +110,8 @@ const CustomInput = ({
         keyboardType={keyboardType}
         onBlur={onBlur}
         autoCorrect={autoCorrect}
+        maxLength={maxLength}
+        disabled={disabled}
       />
       {onPressEye && (
         <CustomTouchable style={[styles.iconContainer, rightIcon && { marginRight: 50 }]} onPress={onPressEye}>

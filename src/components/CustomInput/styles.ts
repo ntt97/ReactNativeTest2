@@ -3,7 +3,7 @@ import { SPACING_SM, colors } from '@constants/vars';
 
 const styles = StyleSheet.create({
   formBar: {
-    height: 45,
+    height: 40,
     alignItems: 'center',
     flexDirection: 'row',
     marginBottom: SPACING_SM,
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
   container: {},
   description: {
     fontSize: 14,
-    marginLeft: 15,
+    marginLeft: 10,
     color: colors.DARK_GREY,
   },
 });

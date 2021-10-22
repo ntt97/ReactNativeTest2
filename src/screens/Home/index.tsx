@@ -85,7 +85,7 @@ const renderCategoryRow = (items: any) => {
   return (
     <View style={styles.rowSmallBox}>
       {items.map((item: any) => (
-        <View style={styles.itemMenu}>
+        <View key={item.title} style={styles.itemMenu}>
           <FastImage
             style={styles.imageItem}
             source={{

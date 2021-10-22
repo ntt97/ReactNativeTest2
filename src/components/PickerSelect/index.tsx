@@ -60,6 +60,7 @@ const PickerSelect = (props: Props) => {
   } = props;
   return (
     <RNPickerSelect
+      disabled={disabled}
       style={{
         ...styles,
         inputIOS: { ...styles.inputIOS, ...inputIOS },
